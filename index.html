@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos Inteligente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>🛒 Catálogo de Productos Inteligente</header>
+  <div class="container">
+    <div class="welcome" id="welcome"></div>
+    <input type="text" id="username" placeholder="Nombre del usuario (cookies)">
+    <input type="text" id="userarea" placeholder="Área de trabajo (Ej: Ventas, Marketing)">
+    <input type="text" id="productName" placeholder="Nombre del producto">
+    <textarea id="productFeatures" placeholder="Características principales del producto" rows="3"></textarea>
+    <textarea id="productAudience" placeholder="Público objetivo (opcional)" rows="2"></textarea>
+    <button onclick="generateProduct()">Generar Ficha con IA</button>
+    <div id="loading">⏳ Generando imagen y descripción con IA...</div>
+    <div class="grid" id="catalog"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
