@@ -20,7 +20,7 @@ header {
   border-radius: 12px;
 }
 input[type=text], textarea {
-  width: 100%;
+  width: calc(100% - 2rem);
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
